@@ -7,7 +7,7 @@
     export default {
         data() {
             return {
-                msg: this.$route.query.data
+                msg: this.$route.query.message
             };
         },
     }
