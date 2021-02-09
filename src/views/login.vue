@@ -81,7 +81,6 @@
                         this.loading  =  true;
                         this.$store.dispatch("Login",  this.loginForm)
                             .then(response  =>  {
-                                console.log("==========1111111111111111111111==============")
                                 this.loading  =  false;
                                 let  code  =  response.data.code;
                                 if  (code  ==  200)  {
@@ -97,7 +96,6 @@
                                 }
                             })
                             .catch(()  =>  {
-                                console.log("==========222222222222222222222222==============")
                                 this.loading  =  false;
                             });
                     }  else  {
